@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gizlilik Politikası — Okulizyon & Fernus Sınav Takip ve Kontrol</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #24292f;
+            background-color: #f6f8fa;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 780px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+            border: 1px solid #d0d7de;
+        }
+        h1 {
+            color: #0969da;
+            font-size: 26px;
+            border-bottom: 2px solid #eaeef2;
+            padding-bottom: 12px;
+            margin-top: 0;
+        }
+        h2 {
+            font-size: 18px;
+            color: #1f2328;
+            margin-top: 24px;
+        }
+        p, li {
+            font-size: 14px;
+            color: #424a53;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .date {
+            font-size: 12px;
+            color: #656d76;
+            margin-bottom: 20px;
+        }
+        .badge {
+            display: inline-block;
+            background: #dafbe1;
+            color: #1a7f37;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="badge">Resmi Gizlilik Bildirimi</span>
+        <h1>Okulizyon & Fernus Sınav Takip ve Kontrol</h1>
+        <div class="date">Son Güncelleme: 7 Kasım 2026</div>
+
+        <p><strong>Okulizyon & Fernus Sınav Takip ve Kontrol</strong> ("Eklenti"), kullanıcıların gizliliğine ve verilerinin güvenliğine en üst düzeyde önem verir. Bu politika, eklentinin hangi verileri ne amaçla işlediğini açıklar.</p>
+
+        <h2>1. Toplanan Bilgiler ve Amaçları</h2>
+        <ul>
+            <li><strong>Sınav İşaretleme Verileri:</strong> Sınavların durumunu ("Tamamlandı", "Sorunlu", "Tekrar Kontrol") ve eklenen notları yerel olarak saklamak için.</li>
+            <li><strong>Google Hesabı Bilgisi:</strong> Chrome profilinde oturum açılmış Google Hesabı e-posta adresi, yalnızca eklenti arayüzünde aktif senkronizasyon durumunu göstermek amacıyla <code>chrome.identity</code> üzerinden okunur.</li>
+            <li><strong>Okulizyon Hesap Bilgileri:</strong> Kullanıcının Sınav Aktarıcı'ya kendisinin girdiği Okulizyon hesaplarının e-posta ve şifreleri, yalnızca bu hesaplarla otomatik tarama yapmak için saklanır.</li>
+        </ul>
+
+        <h2>2. Kişisel Veri Güvenliği</h2>
+        <p>Eklenti verileri geliştiriciye ya da üçüncü taraflara <strong>göndermez</strong> ve <strong>paylaşmaz</strong>. Eklenti içerisinde hiçbir reklam veya üçüncü taraf takip kodu (analytics) bulunmamaktadır. Veriler yalnızca kullanıcının kendi cihazında ve kullanıcının kendi Google hesabında (aşağıdaki eşitleme seçenekleri) tutulur.</p>
+
+        <h2>3. Verilerin Saklanması ve Google Senkronizasyonu</h2>
+        <p>Tüm veriler kullanıcının kendi tarayıcısında (<code>chrome.storage.local</code>) saklanır. Senkronizasyon özelliği kullanıldığında veriler Google'ın <code>chrome.storage.sync</code> altyapısı üzerinden kullanıcının kendi Google Hesabına bağlı cihazları arasında eşitlenir.</p>
+        <p><strong>Google E-Tablo ile eşitleme (isteğe bağlı):</strong> Kullanıcı ayarlardan "Google E-Tabloya Bağlan" seçeneğini kullanırsa, eşitleme verileri (sınav işaretleri ve notları, Edesis/Fernus/Çözüm kayıtları, Sınav Aktarıcı hesap bilgileri ve ayarlar) kullanıcının kendi Google Drive'ında oluşturulan "Okulizyon Eşitleme" E-Tablosuna yazılır. Eklenti yalnızca <code>drive.file</code> yetkisini ister: yalnızca kendi oluşturduğu bu dosyaya erişir, kullanıcının diğer Drive dosyalarını göremez. Hesap şifreleri bu E-Tabloda düz metin olarak durur; E-Tablo başkasıyla paylaşılmamalıdır. Bağlantı ayarlardan istenildiği zaman kesilebilir ve E-Tablo kullanıcı tarafından silinebilir.</p>
+        <p>Google API'lerinden alınan bilgilerin kullanımı ve aktarımı, Sınırlı Kullanım (Limited Use) şartları dahil olmak üzere <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Hizmetleri Kullanıcı Verisi Politikası</a>'na uyar.</p>
+        <p>Cevap anahtarı kontrolü için eklenti, kullanıcının kendi bilgisayarında çalışan Cevap Anahtarı Kontrol uygulamasıyla (<code>127.0.0.1</code>) iletişim kurar; bu iletişim bilgisayarın dışına çıkmaz.</p>
+
+        <h2>4. Kullanılan İzinler</h2>
+        <ul>
+            <li><strong>storage:</strong> Sınav durumlarını ve ayarları saklamak için.</li>
+            <li><strong>downloads:</strong> Cevap anahtarlarını ve Excel raporlarını bilgisayara indirmek için.</li>
+            <li><strong>identity:</strong> Aktif Google Hesabı durumunu göstermek ve, kullanıcı bağlanırsa, Google E-Tablo eşitlemesi için Google yetkisi almak için (yalnızca <code>drive.file</code> kapsamı).</li>
+        </ul>
+
+        <h2>5. İletişim</h2>
+        <p>Gizlilik politikamız ile ilgili her türlü soru için destek ekibimizle iletişime geçebilirsiniz.</p>
+    </div>
+</body>
+</html>
